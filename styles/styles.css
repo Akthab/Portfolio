@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Playpen+Sans&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -85,7 +87,6 @@ section {
 }
 
 .home {
-	min-height: 100vh;
 	height: 100%;
 	max-width: 100%;
 	display: grid;
@@ -425,6 +426,18 @@ section {
 	visibility: visible;
 	opacity: 1;
 }
+.points li {
+	display: flex;
+	align-items: baseline;
+}
+
+.points li p {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 10px;
+	font-family: 'Playpen Sans', cursive;
+	line-height: 1.5;
+}
 
 /* @media (max-width: 576px) {
 	.tech-content ul {
@@ -452,5 +465,9 @@ section {
 
 	.workspace {
 		order: 4;
+	}
+
+	.points {
+		order: 5;
 	}
 }
