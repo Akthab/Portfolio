@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
 		<link rel="stylesheet" href="./styles/styles.css" />
@@ -11,18 +11,34 @@
 		<script src="./javascript/script.js" defer></script>
 		<script src="./javascript/animatedWorkSpace.js" defer></script>
 		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+		<script src="./header/nav/navigation-component.js" type="module"></script>
+		<script
+			src="./components/header/header-component.js"
+			type="module"
+		></script>
+		<script
+			src="./components/theme-button/theme-button.js"
+			type="module"
+		></script>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header_content">
-				<div class="logo"><span>J</span>ohn</div>
-				<nav class="nav">
+		<!-- <header class="header"> -->
+		<!-- <div class="header_content"> -->
+		<!-- <div class="logo"><span>A</span>kthab</div> -->
+		<header>
+			<header-component>
+				<div slot="theme">
+					<theme-button></theme-button>
+				</div>
+			</header-component>
+		</header>
+		<!-- <nav class="nav">
 					<ul class="nav_list">
 						<li class="nav_item">
 							<a href="#" style="--a: 1" class="active">Home</a>
 						</li>
 						<li class="nav_item">
-							<a href="#" class="nav_link" style="--a: 2">About</a>
+							<a href="about.html" class="nav_link" style="--a: 2">About</a>
 						</li>
 						<li class="nav_item">
 							<a href="projects.html" class="nav_link" style="--a: 3"
@@ -30,98 +46,94 @@
 							>
 						</li>
 						<li class="nav_item">
-							<a href="#" class="nav_link" style="--a: 4">Portfolio</a>
+							<a href="experience.html" class="nav_link" style="--a: 4"
+								>Experience</a
+							>
 						</li>
 						<li class="nav_item">
 							<a href="#" class="nav_link" style="--a: 5">Contact</a>
 						</li>
 					</ul>
-				</nav>
-				<div class="hamburger">
+				</nav> -->
+		<!-- <div class="hamburger">
 					<div class="bar"></div>
 					<div class="bar"></div>
 					<div class="bar"></div>
-				</div>
-			</div>
-		</header>
+				</div> -->
+		<!-- </div> -->
+		<!-- </header> -->
 		<section class="home">
 			<div class="home-content">
-				<h1>Hi! I'm John Pater</h1>
-				<h3>UI/UX Designer</h3>
+				<h1>Hi! I'm Akthab Bifaz</h1>
+				<h3>Full Stack Developer</h3>
 				<p>
-					Product Designer and Digital Creative Director working in design field
-					for 10 years so far, specialized in UI/UX, branding and digital
-					designs
+					I have one year of professional experience in full-stack development
+					while working in an office environment. During this time, I gained
+					expertise in building RESTful APIs and testing them using Postman.
+					Additionally, I have experience in frontend development using React.
 				</p>
 				<div class="info-box">
 					<div class="email-info">
 						<h5>Email:</h5>
 						<span>mhmdakthab6@gmail.com</span>
 					</div>
-					<div class="behance-info">
-						<h5>Behance:</h5>
-						<span>behance.net</span>
-					</div>
 				</div>
 				<div class="btn-box">
-					<a href="#">Download CV</a>
-					<a href="#">Hire me now</a>
+					<a href="cv/Akthab Bifaz CV.pdf" download>Download CV</a>
+					<!-- <a href="#">Hire me now</a> -->
 				</div>
 			</div>
 			<!-- <div class="home-image"> -->
 			<!-- <div class="img-box"> -->
 			<!-- <div class="svg-container"> -->
+			<!-- <div class="bicycle-ride"> -->
 			<div class="bicycle-ride">
-				<svg viewBox="0 0 600 600">
+				<svg viewBox="0 0 600 600" fill="none">
+					<!-- <defs> -->
 					<foreignObject x="20" y="20" width="100%" height="100%">
-						<div class="bike-riding">
-							<div class="clouds"></div>
-							<div class="shadow"></div>
-							<div class="cyclist">
-								<div class="bike">
-									<div class="leftTyre">
-										<div class="spokes"></div>
-									</div>
-									<div class="rightTyre">
-										<div class="spokes"></div>
-									</div>
-									<div class="wheel"></div>
-									<div class="pedals"></div>
-									<div class="chain"></div>
-								</div>
-								<div class="girl">
-									<div class="top"></div>
-									<div class="laptop"></div>
-									<div class="leftHand">
-										<div class="finger">
-											<div class="🤚">
-												<!-- finger -->
-												<div class="👉"></div>
-												<div class="👉"></div>
-												<div class="👉"></div>
-												<div class="👉"></div>
-												<!-- palm -->
-												<div class="🌴"></div>
-												<!-- thumb  -->
-												<div class="👍"></div>
-											</div>
-										</div>
-									</div>
-									<div class="head"></div>
-									<div class="trousers">
-										<div class="leftLeg">
-											<div class="leftcalf"></div>
-										</div>
-										<div class="rightLeg">
-											<div class="calf"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<g class="bike">
+							<g class="leftTyre">
+								<g class="spokes"></g>
+							</g>
+							<g class="rightTyre">
+								<g class="spokes"></g>
+							</g>
+							<g class="wheel"></g>
+							<g class="pedals"></g>
+							<g class="chain"></g>
+						</g>
+						<g class="girl">
+							<g class="head"></g>
+							<g class="top"></g>
+							<g class="laptop"></g>
+							<g class="leftHand">
+								<g class="finger">
+									<g class="🤚">
+										<!-- finger -->
+										<g class="👉"></g>
+										<g class="👉"></g>
+										<g class="👉"></g>
+										<g class="👉"></g>
+										<!-- palm -->
+										<g class="🌴"></g>
+										<!-- thumb  -->
+										<g class="👍"></g>
+									</g>
+								</g>
+							</g>
+							<g class="trousers">
+								<g class="leftLeg">
+									<g class="leftcalf"></g>
+								</g>
+								<g class="rightLeg">
+									<g class="calf"></g>
+								</g>
+							</g>
+						</g>
 					</foreignObject>
 				</svg>
 			</div>
+			<!-- </div> -->
 			<!-- </div> -->
 			<!-- <img src="./../laptop-bg.png" alt="" /> -->
 			<!-- </div> -->
@@ -129,45 +141,24 @@
 			<!-- <div style="width: 480px"> -->
 		</section>
 		<div>
-			<h1
-				style="
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					font-family: 'Playpen Sans', cursive;
-				"
-			>
-				Heres what I do
-			</h1>
-			<h2
-				style="
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					font-family: 'Playpen Sans', cursive;
-				"
-			>
-				Full Stack Developer
-			</h2>
+			<h1 class="tech-header">Heres what I do</h1>
+			<h2 class="tech-header-2">Full Stack Developer</h2>
 		</div>
 		<section class="home">
 			<div class="workspace">
-				<svg viewBox="0 0 730 600">
+				<svg viewBox="0 0 980 640">
 					<foreignObject x="20" y="20" width="100%" height="100%">
-						<div id="workspace">
-							<!-- ===============================================/*
-	/*                    Clock                         /*
-	/* =============================================== -->
-							<div class="clock">
-								<div class="top"></div>
-								<div class="right"></div>
-								<div class="bottom"></div>
-								<div class="left"></div>
-								<div class="center"></div>
-								<div class="hour"></div>
-								<div class="minute"></div>
-								<div class="second"></div>
-							</div>
+						<g id="workspace">
+							<g class="clock">
+								<g class="top"></g>
+								<g class="right"></g>
+								<g class="bottom"></g>
+								<g class="left"></g>
+								<g class="center"></g>
+								<g class="hour"></g>
+								<g class="minute"></g>
+								<g class="second"></g>
+							</g>
 
 							<!-- ===============================================/*
 	/*                    Shelf                         /*
@@ -265,7 +256,7 @@
 			/* =============================================== -->
 								<div class="trash"><i class="shadows"></i></div>
 							</div>
-						</div>
+						</g>
 					</foreignObject>
 				</svg>
 			</div>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Experience</title>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/experience.css" />
+		<!-- <script src="./header/nav/navigation-component.js" type="module"></script> -->
+		<script src="./components/header/header-component.js" type="module"></script>
+		<script src="./components/theme-button/theme-button.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<header-component>
+				<div slot="theme">
+					<theme-button></theme-button>
+				</div>
+			</header-component>
+		</header>
+		<!-- <header class="header">
+			<div class="header_content">
+				<div class="logo"><span>A</span>kthab</div>
+				<nav class="nav">
+					<ul class="nav_list">
+						<li class="nav_item">
+							<a href="index.html" style="--a: 1" class="active">Home</a>
+						</li>
+						<li class="nav_item">
+							<a href="#" class="nav_link" style="--a: 2">About</a>
+						</li>
+						<li class="nav_item">
+							<a href="projects.html" class="nav_link" style="--a: 3"
+								>Projects</a
+							>
+						</li>
+						<li class="nav_item">
+							<a href="experience.html" class="nav_link" style="--a: 4"
+								>Experience</a
+							>
+						</li>
+						<li class="nav_item">
+							<a href="#" class="nav_link" style="--a: 5">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</div>
+		</header> -->
+		<section class="home-cont">
+			<div class="svg-container">
+				<img
+					src="svg/svg-experience.svg"
+					style="width: 229px"
+					alt="My Happy SVG"
+				/>
+			</div>
+			<div class="project-desc">
+				<h1 style="font-size: 40px; padding-bottom: 20px;">Experience and Education</h1>
+				<p>
+					These contains all of my previous experience and Education I have
+					completed throughout my journey in the field
+				</p>
+			</div>
+		</section>
+		<div style="display: flex; flex-wrap: wrap; gap: 40px; padding: 20px; padding-left: 60px;">
+			<div>
+				<h2 style="padding-bottom: 20px; padding-left: 10px;">Work Experience</h4>
+				<div class="card">
+					<div style="display: flex">
+						<img
+							src="images/begood-logo.png"
+							alt="logo of begood solutions"
+							style="width: 60px; padding: 10px"
+						/>
+						<p style="padding-top: 10px; line-height: 1.1; font-weight: bold">
+							BeGood Solutions <br />
+							2020 - 2021
+						</p>
+					</div>
+					<p style="padding: 10px">
+						I have worked with several tests and also worked with test driven
+						architecture
+					</p>
+					<details>
+						<summary>Tech Stack</summary>
+						<div class="content">
+							<p style="line-height: 2.0;">
+								<strong>Programming Languages </strong> - Java, JavaScripts<br />
+								<strong>Frameworks </strong>- Reactjs,  Nextjs, Nodejs,  SpringBoot,  Express<br />
+								<strong>CSS </strong>- Vanilla CSS, Bootstrap, Tailwind <br />
+								<strong>Mobile Application Development </strong>- Flutter<br />
+								<strong>Testing Framework </strong>- Cypress<br />
+								<strong>DB </strong>- MySqL, MongoDB<br />
+								<strong>Version Control</strong> - Git
+							</p>
+						</div>
+					</details>
+				</div>
+			</div>
+			<div>
+				<h2 style="padding-bottom: 20px; padding-left: 10px;">Education</h2>
+				<div class="card">
+					<div style="display: flex">
+						<img
+							src="images/iit-logo.png"
+							alt="logo of begood solutions"
+							style="width: 60px; padding: 10px"
+						/>
+						<p style="padding-top: 10px; line-height: 1.1; font-weight: bold">
+							Informatics Institute of Technology <br />
+							2018 - 2023
+						</p>
+					</div>
+					<p style="padding: 10px">
+						I have worked with several tests and also worked with test driven
+						architecture
+					</p>
+					<details>
+						<summary>Modules Completed</summary>
+						<div class="content">
+							<p>
+								HTML, CSS , React , MongoDB, Bootstrap,Nodejs, SpringBoot <br />
+								Cypress, Git, Flutter, Express
+							</p>
+						</div>
+					</details>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
