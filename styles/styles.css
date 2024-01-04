@@ -44,6 +44,9 @@
 	--header-li-color: #fff;
 	--project-card-color: rgba(255, 255, 255, 0.1);
 	--project-card-ul-color: #91c6ff70;
+	--about-card-color: rgb(53, 50, 50);
+	--about-card-icon-color: rgb(165, 181, 206);
+	--about-card-icon-bg-color: rgba(93, 133, 193, 0.05);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -74,6 +77,9 @@ body {
 			0 0 150px rgba(18, 113, 255, 0.3); */
 		--project-card-color: rgba(72, 222, 75, 0.17);
 		--project-card-ul-color: #c4dc5894;
+		--about-card-color: rgb(119, 180, 126);
+		--about-card-icon-color: rgb(23, 28, 35);
+		--about-card-icon-bg-color: rgb(196, 220, 88);
 	}
 }
 

@@ -47,7 +47,7 @@
 
 .tilt-box-wrap {
 	width: 400px;
-	height: 250px;
+	height: 264px;
 	position: relative;
 	transition: all 0.6s ease-out;
 	perspective: 1000px;
@@ -178,7 +178,7 @@
 	/* padding-left: 16px; */
 	padding-top: 10px;
 	padding-bottom: 6px;
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: var(--project-card-ul-color);
 	border-radius: 20px;
 }
@@ -234,5 +234,17 @@
 
 	.tilt-box-wrap {
 		width: 340px;
+		height: 300px;
 	}
+}
+
+.git-link {
+	font-size: 12px;
+	text-decoration: none;
+	/* color: wheat; */
+	padding-bottom: 10px;
+}
+
+.git-link a {
+	color: #ffb01e;
 }

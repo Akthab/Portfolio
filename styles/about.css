@@ -32,14 +32,6 @@
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	/* width: 400px; */
 }
-.container:after {
-	background-color: #f2f2f2;
-	content: '';
-	height: 10px;
-	position: absolute;
-	top: 390px;
-	width: 100%;
-}
 .container:hover {
 	transform: scale(0.54);
 }
@@ -117,7 +109,6 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px;
 }
 
 .card {
@@ -127,18 +118,19 @@ body {
 	position: relative;
 	z-index: 1;
 	overflow-x: hidden;
-	background-color: rgb(75, 72, 72);
-	color: #dcddec;
+	background-color: var(--about-card-color);
+	/* color: #dcddec; */
 	display: flex;
 	transition: 0.3s;
 	flex-direction: column;
 	border-radius: 10px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	overflow: clip;
 	/* box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2); */
 }
 
 .card[data-state='#about'] {
-	height: 600px;
+	height: 620px;
 	.card-main {
 		padding-top: 0;
 	}
@@ -146,6 +138,11 @@ body {
 
 .card[data-state='#contact'] {
 	height: 430px;
+	width: 400px;
+
+	.card-subtitle {
+		margin-left: 45px;
+	}
 }
 
 .card[data-state='#experience'] {
@@ -287,7 +284,7 @@ body {
 
 .card-subtitle {
 	font-weight: 700;
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 8px;
 }
 
@@ -297,7 +294,7 @@ body {
 
 .card-desc {
 	line-height: 1.6;
-	color: #d8e8ef;
+	/* color: #d8e8ef; */
 	font-size: 14px;
 	margin: 0;
 	font-weight: 400;
@@ -310,7 +307,7 @@ body {
 	padding: 0 20px;
 	margin-bottom: 30px;
 	svg {
-		fill: rgb(165, 181, 206);
+		fill: var(--about-card-icon-color);
 		width: 16px;
 		display: block;
 		transition: 0.3s;
@@ -324,7 +321,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		transition: 0.3s;
-		background-color: rgba(93, 133, 193, 0.05);
+		background-color: var(--about-card-icon-bg-color);
 		border-radius: 50%;
 		margin-right: 10px;
 
@@ -361,12 +358,12 @@ body {
 		font-family: 'Jost', sans-serif;
 		font-weight: 500;
 		outline: 0;
-		border-bottom: 3px solid red;
+		border-bottom: 3px solid transparent;
 
 		&.is-active,
 		&:hover {
 			color: #2b2c48;
-			border-bottom: 3px solid #8a84ff;
+			border-bottom: 5px solid #8a84ff;
 			background: linear-gradient(
 				to bottom,
 				rgba(127, 199, 231, 0) 0%,
@@ -460,14 +457,16 @@ body {
 }
 
 .card-contact-wrapper {
-	margin-top: 20px;
+	margin-top: 36px;
+	justify-content: center;
+	display: grid;
 }
 
 .card-contact {
 	display: flex;
 	align-items: center;
 	font-size: 13px;
-	color: #6f6f7b;
+	/* color: #6f6f7b; */
 	font-family: 'DM Sans', sans-serif;
 	line-height: 1.6;
 	cursor: pointer;
